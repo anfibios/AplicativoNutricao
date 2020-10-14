@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppBase</string>
+    <string name="title_activity_tela2">tela2</string>
+    <string name="title_activity_screen2">screen2</string>
+</resources>
