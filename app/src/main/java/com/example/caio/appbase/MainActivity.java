@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
     public void irparatela2(View view){
         Intent intent1 = new Intent(getApplicationContext(),tela2.class);
         startActivity(intent1);
+        finish();
     }
 }
-

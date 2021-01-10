@@ -7,41 +7,109 @@
     tools:context="com.example.caio.appbase.StatusDoImc">
 
     <TextView
-        android:id="@+id/textObservacao"
+        android:id="@+id/textObservacao2"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="319dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Observação"
+        android:layout_marginTop="23dp"
+        android:text="Observação                                                                                                                                                                                     "
         android:textColor="@android:color/background_dark"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPesoEstim" />
+        app:layout_constraintTop_toBottomOf="@+id/textPesoEstim2" />
 
     <TextView
-        android:id="@+id/textPesoEstim"
+        android:id="@+id/textPesoEstim2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="16dp"
+        android:text="Peso Estimado"
         android:textColor="@android:color/background_dark"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResultado" />
+        app:layout_constraintTop_toBottomOf="@+id/textResultado2" />
 
     <TextView
-        android:id="@+id/textResultado"
+        android:id="@+id/textResultado2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="Resultado esperado"
-        android:textAlignment="center"
         android:textColor="@android:color/background_dark"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Status do IMC"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Você gostaria de conhecer alguns profissionais de saúde em Manaus para marcar uma consulta e entrar numa dieta?"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textObservacao2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:onClick="sair"
+        android:text="NÃO"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="5dp"
+        android:onClick="IrParaProfissionais"
+        android:text="SIM"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="7dp"
+        android:onClick="voltar"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteY="-3dp"
+        app:layout_constraintHorizontal_bias="0.761" />
+
 </android.support.constraint.ConstraintLayout>
