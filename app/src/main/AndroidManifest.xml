@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".tela2" />
         <activity android:name=".StatusDoImc" />
-        <activity android:name=".TelaDeProfissionais"></activity>
+        <activity android:name=".TelaDeProfissionais" />
+        <activity android:name=".DadosDoCliente" />
+        <activity android:name=".HospSantoAlberto" />
+        <activity android:name=".HopSantaJulia"></activity>
     </application>
 
 </manifest>
