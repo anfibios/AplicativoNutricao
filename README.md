@@ -26,7 +26,8 @@ Este projeto consiste no desenvolvimento de um sistema de gerenciamento nutricio
 
 ## ⚙️ Tecnologias Utilizadas
 
-- HTML / CSS / JavaScript
+- Java
+- Android Studio
 - Banco de Dados
 - Lógica de programação
 
